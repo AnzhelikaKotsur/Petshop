@@ -1,16 +1,6 @@
 ﻿using Npgsql;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
 using Зоомагазин.Database;
 using Зоомагазин.Models;
-using System.Drawing.Drawing2D;
 
 namespace Зоомагазин
 {
@@ -19,6 +9,19 @@ namespace Зоомагазин
         public LoginForm()
         {
             InitializeComponent();
+
+            txtLogin.Text = "Введите логин";
+            txtLogin.ForeColor = Color.FromArgb(164, 139, 160);
+
+            txtPassword.Text = "Введите пароль";
+            txtPassword.ForeColor = Color.FromArgb(164, 139, 160);
+            txtPassword.PasswordChar = '\0';
+
+            txtLogin.Enter += txtLogin_Enter;
+            txtLogin.Leave += txtLogin_Leave;
+
+            txtPassword.Enter += txtPassword_Enter;
+            txtPassword.Leave += txtPassword_Leave;
 
             int radius = 100;
             if (panel1 != null)
@@ -108,7 +111,7 @@ namespace Зоомагазин
 
         private void Panel1_Paint(object sender, PaintEventArgs e)
         {
-            Panel pnl = sender as Panel;
+            var pnl = sender as Panel;
             if (pnl == null) return;
 
             using (var brush = new System.Drawing.Drawing2D.LinearGradientBrush(
@@ -128,8 +131,8 @@ namespace Зоомагазин
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string login = txtLogin.Text;
-            string password = txtPassword.Text;
+            var login = txtLogin.Text;
+            var password = txtPassword.Text;
 
             if (string.IsNullOrEmpty(login) || string.IsNullOrEmpty(password))
             {
@@ -171,6 +174,44 @@ namespace Зоомагазин
             }
         }
 
+        private void txtLogin_Enter(object sender, EventArgs e)
+        {
+            if (txtLogin.Text == "Введите логин")
+            {
+                txtLogin.Text = "";
+                txtLogin.ForeColor = Color.White;
+            }
+        }
+
+        private void txtLogin_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtLogin.Text))
+            {
+                txtLogin.Text = "Введите логин";
+                txtLogin.ForeColor = Color.FromArgb(164, 139, 160);
+            }
+        }
+
+        private void txtPassword_Enter(object sender, EventArgs e)
+        {
+            if (txtPassword.Text == "Введите пароль")
+            {
+                txtPassword.Text = "";
+                txtPassword.ForeColor = Color.White;
+                txtPassword.PasswordChar = '*';
+            }
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrWhiteSpace(txtPassword.Text))
+            {
+                txtPassword.PasswordChar = '\0';
+                txtPassword.Text = "Введите пароль";
+                txtPassword.ForeColor = Color.FromArgb(164, 139, 160);
+            }
+        }
+
         private void lblLogin_Click(object sender, EventArgs e)
         {
 
@@ -183,7 +224,9 @@ namespace Зоомагазин
 
         private void Register_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
+            var reg = new Registration();
+            reg.Show();
+            this.Hide();
         }
     }
 

@@ -33,7 +33,7 @@
             // 
             // Title
             // 
-            Title.Font = new Font("Gabriela", 32F, FontStyle.Bold);
+            Title.Font = new Font("Century", 31.8000011F, FontStyle.Bold, GraphicsUnit.Point, 204);
             Title.ForeColor = Color.White;
             Title.Location = new Point(105, 75);
             Title.Name = "Title";
@@ -45,11 +45,11 @@
             // 
             // lblLogin
             // 
-            lblLogin.Font = new Font("Gabriela", 10F);
+            lblLogin.Font = new Font("Century", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
             lblLogin.ForeColor = Color.White;
-            lblLogin.Location = new Point(105, 215);
+            lblLogin.Location = new Point(124, 215);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(100, 20);
+            lblLogin.Size = new Size(66, 20);
             lblLogin.TabIndex = 1;
             lblLogin.Text = "Логин";
             lblLogin.Click += lblLogin_Click;
@@ -57,18 +57,19 @@
             // txtLogin
             // 
             txtLogin.BackColor = Color.FromArgb(137, 101, 129);
+            txtLogin.BorderStyle = BorderStyle.None;
+            txtLogin.Font = new Font("Gabriela", 14F);
             txtLogin.ForeColor = Color.FromArgb(164, 139, 160);
-            txtLogin.Location = new Point(181, 238);
+            txtLogin.Location = new Point(15, 8);
             txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(100, 29);
+            txtLogin.Size = new Size(390, 30);
             txtLogin.TabIndex = 2;
-            txtLogin.Text = "Введите логин";
             // 
             // lblPass
             // 
-            lblPass.Font = new Font("Gabriela", 10F);
+            lblPass.Font = new Font("Century", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
             lblPass.ForeColor = Color.White;
-            lblPass.Location = new Point(105, 343);
+            lblPass.Location = new Point(124, 340);
             lblPass.Name = "lblPass";
             lblPass.Size = new Size(100, 20);
             lblPass.TabIndex = 3;
@@ -79,7 +80,7 @@
             btnLogin.BackColor = Color.FromArgb(137, 101, 129);
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
-            btnLogin.Font = new Font("Gabriela", 20F);
+            btnLogin.Font = new Font("Century", 20F);
             btnLogin.ForeColor = Color.White;
             btnLogin.Location = new Point(159, 476);
             btnLogin.Name = "btnLogin";
@@ -91,15 +92,16 @@
             // 
             // Register
             // 
-            Register.ActiveLinkColor = Color.Maroon;
+            Register.ActiveLinkColor = Color.FromArgb(192, 0, 192);
+            Register.Font = new Font("Century", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Register.LinkBehavior = LinkBehavior.NeverUnderline;
             Register.LinkColor = Color.White;
             Register.Location = new Point(290, 575);
             Register.Name = "Register";
-            Register.Size = new Size(197, 20);
+            Register.Size = new Size(215, 20);
             Register.TabIndex = 6;
             Register.TabStop = true;
-            Register.Text = "Зарегистрироваться?";
+            Register.Text = "Зарегистрироваться";
             Register.LinkClicked += Register_LinkClicked;
             // 
             // CloseB
@@ -141,13 +143,13 @@
             // 
             // lblNoAccount
             // 
-            lblNoAccount.Font = new Font("Gabriela", 10F);
+            lblNoAccount.Font = new Font("Century", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            lblNoAccount.ForeColor = Color.FromArgb(167, 143, 163);
             lblNoAccount.Location = new Point(159, 573);
             lblNoAccount.Name = "lblNoAccount";
             lblNoAccount.Size = new Size(136, 26);
             lblNoAccount.TabIndex = 9;
             lblNoAccount.Text = "Нет аккаунта?";
-            lblNoAccount.ForeColor = Color.FromArgb(0xA7, 0x8F, 0xA3);
             lblNoAccount.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pnlPassword
@@ -162,14 +164,14 @@
             // txtPassword
             // 
             txtPassword.BackColor = Color.FromArgb(137, 101, 129);
-            txtPassword.Font = new Font("Gabriela", 16F);
+            txtPassword.BorderStyle = BorderStyle.None;
+            txtPassword.Font = new Font("Gabriela", 14F);
             txtPassword.ForeColor = Color.FromArgb(164, 139, 160);
-            txtPassword.Location = new Point(181, 298);
+            txtPassword.Location = new Point(15, 8);
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
-            txtPassword.Size = new Size(100, 42);
+            txtPassword.Size = new Size(390, 30);
             txtPassword.TabIndex = 4;
-            txtPassword.Text = "Введите пароль";
             // 
             // LoginForm
             // 

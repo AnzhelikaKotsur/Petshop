@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Npgsql;
-using System.Windows.Forms;
+﻿using Npgsql;
 
 namespace Зоомагазин.Database
 {
+    /// <summary>
+    /// соединение с базой данных
+    /// </summary>
     public class Connection
     {
         private static string connectionString =
