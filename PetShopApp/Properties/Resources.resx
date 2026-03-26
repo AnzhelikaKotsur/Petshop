@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ProductError_Title" xml:space="preserve">
+    <value>Недостаточно товара</value>
+  </data>
+  <data name="ProductError_Subtitle" xml:space="preserve">
+    <value>Проверьте корректность количества товара</value>
+  </data>
+  <data name="ProductError_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+
+  <data name="InvalidData_Title" xml:space="preserve">
+    <value>Неверные данные</value>
+  </data>
+  <data name="InvalidData_Subtitle" xml:space="preserve">
+    <value>Проверьте корректность вводимых данных</value>
+  </data>
+  <data name="InvalidData_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+
+  <data name="UnableDeleteCategory_Title" xml:space="preserve">
+    <value>Невозможно удалить категорию</value>
+  </data>
+  <data name="UnableDeleteCategory_Subtitle" xml:space="preserve">
+    <value>Очистите категорию и попробуйте ещё раз</value>
+  </data>
+  <data name="UnableDeleteCategory_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+
+  <data name="Common_ErrorTitle" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="Common_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="Common_Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+
+  <data name="AddCategory_Title" xml:space="preserve">
+    <value>Добавить категорию</value>
+  </data>
+  <data name="AddCategory_Input1" xml:space="preserve">
+    <value>Введите название...</value>
+  </data>
+  <data name="AddCategory_Action" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+
+  <data name="DeleteCategory_Title" xml:space="preserve">
+    <value>Удалить категорию</value>
+  </data>
+  <data name="DeleteCategory_Input1" xml:space="preserve">
+    <value>Выберите категорию</value>
+  </data>
+  <data name="DeleteCategory_Action" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+
+  <data name="DeleteProduct_Title" xml:space="preserve">
+    <value>Удалить товар</value>
+  </data>
+  <data name="DeleteProduct_Input1" xml:space="preserve">
+    <value>Введите артикул товара...</value>
+  </data>
+  <data name="DeleteProduct_Action" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+
+  <data name="AddProduct_Title" xml:space="preserve">
+    <value>Добавить товар</value>
+  </data>
+  <data name="AddProduct_Input1" xml:space="preserve">
+    <value>Артикул</value>
+  </data>
+  <data name="AddProduct_Input2" xml:space="preserve">
+    <value>Введите название...</value>
+  </data>
+  <data name="AddProduct_Input3" xml:space="preserve">
+    <value>Введите категорию...</value>
+  </data>
+  <data name="AddProduct_Input4" xml:space="preserve">
+    <value>Введите единицы измерения...</value>
+  </data>
+  <data name="AddProduct_Input5" xml:space="preserve">
+    <value>Введите цену...</value>
+  </data>
+  <data name="AddProduct_Action" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+
+  <data name="EditProduct_Title" xml:space="preserve">
+    <value>Редактировать товар</value>
+  </data>
+  <data name="EditProduct_Input1" xml:space="preserve">
+    <value>Артикул</value>
+  </data>
+  <data name="EditProduct_Input2" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="EditProduct_Input3" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="EditProduct_Input4" xml:space="preserve">
+    <value>Единица измерения</value>
+  </data>
+  <data name="EditProduct_Input5" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="EditProduct_Action" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="AdminMain_Title" xml:space="preserve">
+    <value>Главное окно администратора</value>
+  </data>
+  <data name="AdminMain_Add" xml:space="preserve">
+    <value>Добавить</value>
+  </data>
+  <data name="AdminMain_Edit" xml:space="preserve">
+    <value>Редактировать</value>
+  </data>
+  <data name="AdminMain_Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="AdminMain_CategoryList" xml:space="preserve">
+    <value>Список категорий</value>
+  </data>
+  <data name="AdminMain_SearchPlaceholder" xml:space="preserve">
+    <value>поиск</value>
+  </data>
+  <data name="AdminMain_Col_Article" xml:space="preserve">
+    <value>Артикул</value>
+  </data>
+  <data name="AdminMain_Col_Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="AdminMain_Col_Category" xml:space="preserve">
+    <value>Категория</value>
+  </data>
+  <data name="AdminMain_Col_Unit" xml:space="preserve">
+    <value>Ед. изм.</value>
+  </data>
+  <data name="AdminMain_Col_Price" xml:space="preserve">
+    <value>Цена</value>
+  </data>
+  <data name="AdminMain_Col_Stock" xml:space="preserve">
+    <value>Остаток</value>
+  </data>
+  <data name="CategoryList_Title" xml:space="preserve">
+    <value>Список категорий</value>
+  </data>
+  <data name="CategoryList_SearchPlaceholder" xml:space="preserve">
+    <value>Поиск</value>
+  </data>
+  <data name="CategoryList_NewCategory" xml:space="preserve">
+    <value>Новая категория</value>
+  </data>
+  <data name="CategoryList_Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="CategoryList_EditTitle" xml:space="preserve">
+    <value>Редактирование</value>
+  </data>
+  <data name="CategoryList_NamePlaceholder" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="CategoryList_Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="CategoryList_Delete" xml:space="preserve">
+    <value>Удалить</value>
+  </data>
+  <data name="CategoryList_Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="CategoryList_Grid_Id" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="CategoryList_Grid_Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="CategoryList_Message_SelectCategory" xml:space="preserve">
+    <value>Выберите категорию в таблице.</value>
+  </data>
+  <data name="CategoryList_Message_EnterName" xml:space="preserve">
+    <value>Введите название</value>
+  </data>
+  <data name="AdminMain_UserCaption" xml:space="preserve">
+    <value>Администратор: Фамилия И.О</value>
+  </data>
+  <data name="AdminMain_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="EditProduct_Message_FillArticle" xml:space="preserve">
+    <value>Заполните артикул.</value>
+  </data>
+  <data name="EditProduct_Message_FillName" xml:space="preserve">
+    <value>Заполните название.</value>
+  </data>
+  <data name="EditProduct_Message_InvalidPrice" xml:space="preserve">
+    <value>Некорректная цена.</value>
+  </data>
+  <data name="AddProduct_Message_FillRequired" xml:space="preserve">
+    <value>Заполните артикул и название.</value>
+  </data>
+  <data name="AddProduct_Message_InvalidPrice" xml:space="preserve">
+    <value>Некорректная цена.</value>
+  </data>
+  <data name="DeleteProduct_Message_FillArticle" xml:space="preserve">
+    <value>Введите артикул товара.</value>
+  </data>
+  <data name="StorekeeperMain_Title" xml:space="preserve">
+    <value>Главное окно кладовщика</value>
+  </data>
+  <data name="StorekeeperMain_UserCaption" xml:space="preserve">
+    <value>Кладовщик: Фамилия И.О</value>
+  </data>
+  <data name="StorekeeperMain_Shipment" xml:space="preserve">
+    <value>Оформить отгрузку</value>
+  </data>
+  <data name="StorekeeperMain_Exit" xml:space="preserve">
+    <value>Выход</value>
+  </data>
+  <data name="StorekeeperMain_SearchPlaceholder" xml:space="preserve">
+    <value>поиск</value>
+  </data>
+  <data name="ShipmentGeneration_Title" xml:space="preserve">
+    <value>Формирования отгрузки</value>
+  </data>
+  <data name="ShipmentGeneration_ProductPlaceholder" xml:space="preserve">
+    <value>Выберите товар из списка</value>
+  </data>
+  <data name="ShipmentGeneration_QtyPlaceholder" xml:space="preserve">
+    <value>Введите количество товара</value>
+  </data>
+  <data name="ShipmentGeneration_ToPlaceholder" xml:space="preserve">
+    <value>Введите кому</value>
+  </data>
+  <data name="ShipmentGeneration_AddToList" xml:space="preserve">
+    <value>Добавить в список</value>
+  </data>
+  <data name="ShipmentGeneration_Cancel" xml:space="preserve">
+    <value>Отмена</value>
+  </data>
+  <data name="ShipmentGeneration_Confirm" xml:space="preserve">
+    <value>Подтвердить отгрузку</value>
+  </data>
+  <data name="ShipmentGeneration_Col_Article" xml:space="preserve">
+    <value>Артикул</value>
+  </data>
+  <data name="ShipmentGeneration_Col_Name" xml:space="preserve">
+    <value>Название</value>
+  </data>
+  <data name="ShipmentGeneration_Col_To" xml:space="preserve">
+    <value>Кому</value>
+  </data>
+  <data name="ShipmentGeneration_Message_SelectProduct" xml:space="preserve">
+    <value>Выберите товар из списка.</value>
+  </data>
+  <data name="ShipmentGeneration_Message_InvalidQty" xml:space="preserve">
+    <value>Введите корректное количество.</value>
+  </data>
+  <data name="ShipmentGeneration_Message_FillTo" xml:space="preserve">
+    <value>Введите получателя.</value>
+  </data>
+  <data name="ShipmentGeneration_Message_NoItems" xml:space="preserve">
+    <value>Список отгрузки пуст.</value>
+  </data>
+  <data name="ShipmentGeneration_Message_NotEnoughStock" xml:space="preserve">
+    <value>Недостаточно товара на складе.</value>
+  </data>
+  <data name="ShipmentGeneration_Message_Done" xml:space="preserve">
+    <value>Отгрузка успешно сформирована.</value>
+  </data>
+</root>
